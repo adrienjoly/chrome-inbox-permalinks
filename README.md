@@ -1,9 +1,9 @@
 # Permalinks for Google Inbox (Chrome extension)
 
-A minimal extension that provides direct URLs to your emails, from Google Inbox.
+A minimal Chrome Extension that provides direct URLs to your emails, from Google Inbox.
 
-Install from Chrome Web Store: [TODO](TODO)
+Install from Chrome Web Store: [Permalinks for Google Inbox](https://chrome.google.com/webstore/detail/eijfpfnadnijllpfdkdikfamdijafala)
 
 ### Demo
 
-TODO
+![screenshot permalinks for google inbox](docs/assets/screenshot-inbox-permalinks.png)
