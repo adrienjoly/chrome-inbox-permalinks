@@ -11,7 +11,7 @@ function attachLinks(messageView) {
 	div.appendChild(link);
 	var res = threadView.addSidebarContentPanel({
 		el: div,
-		title: 'Permalink: ' + url,
+		title: 'Permalink: ' + threadView.getSubject(),
 		iconUrl: chrome.extension.getURL('link.png'),
 	});
 }
