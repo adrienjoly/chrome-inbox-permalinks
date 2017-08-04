@@ -7,6 +7,7 @@ function attachLinks(messageView) {
 	link.href = url;
 	link.target = '_blank';
 	link.innerHTML = 'Permalink to this email';
+  div.style = 'text-align: center;';
 	div.appendChild(link);
 	var res = threadView.addSidebarContentPanel({
 		el: div,
