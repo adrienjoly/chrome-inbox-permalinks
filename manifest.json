@@ -1,7 +1,7 @@
 {
   "name": "Permalinks for Google Inbox",
   "description": "Provides direct URLs to your emails, from Google Inbox.",
-  "version": "0.3",
+  "version": "0.4",
   "icons": {
     "128": "icon.png"
   },
