@@ -1,9 +1,13 @@
 {
   "name": "Permalinks for Google Inbox",
   "description": "Provides direct URLs to your emails, from Google Inbox.",
-  "version": "0.5",
+  "version": "0.6",
   "icons": {
     "128": "icon.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
   },
   "content_scripts": [
     {
