@@ -6,12 +6,19 @@ function attachLinks(messageView) {
   attachThreadLink(threadView);
 }
 */
+
+function getUserSuffix(url) {
+  var res = /^https\:\/\/inbox\.google\.com\/(u\/\d\/)/.exec(url);
+  return res ? res[1] : '';
+}
+
 function attachThreadLink(threadView) {
   threadView.getThreadIDAsync().then(function(threadId) {
     console.log('[google-inbox-permalinks] getThreadIDAsync => ', arguments);
     if (!threadId) return;
+    var userSuffix = getUserSuffix(window.location.href);
     var link = document.createElement('a');
-    link.href = 'https://mail.google.com/mail/#all/' + threadId;
+    link.href = 'https://mail.google.com/mail/' + userSuffix + '#all/' + threadId;
     link.target = '_blank';
     link.appendChild(document.createTextNode('Permalink'));
     // note: threadView.getSubject() contains junk in the French version of Google Inbox
